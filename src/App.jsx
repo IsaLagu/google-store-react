@@ -1,7 +1,9 @@
+import ProductDetails from "./pages/product-details/ProductDetails";
+
 export default function App() {
-    return (
-        <div>
-            <h1>Funciona</h1>
-        </div>
-    );
+  return (
+    <div>
+      <ProductDetails />
+    </div>
+  );
 }
