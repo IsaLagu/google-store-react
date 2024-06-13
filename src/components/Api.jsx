@@ -1,4 +1,4 @@
-import { products } from '../assets/data/Data.jsx';
+import { products } from '../assets/data/data.jsx';
 
 export default function List() {
   const listItems = products.map(product =>
