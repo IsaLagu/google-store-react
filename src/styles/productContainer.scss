@@ -1,0 +1,9 @@
+@use 'variables' as v;
+
+.productContainer {
+    display: flex;
+    width: 40%;
+    float: left;
+    background-color: $background-color;
+
+}
