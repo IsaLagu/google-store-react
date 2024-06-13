@@ -1,0 +1,107 @@
+@import "../../styles/variables.scss";
+
+.product-price-info {
+  background-color: $background-color-img;
+  display: block;
+  padding: 15px;
+  margin-top: 110px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+  
+.product-price-info {
+  &h2,
+  &br,
+  &input,
+  &button,
+  &img,
+  &p {
+    display: block;
+    width: 100%;
+  }
+  input {
+    width: 80px;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 20px;
+  }
+}
+  
+.total {
+  font-size: 35px;
+  color: $secondary-color;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+  
+.product-price-info {
+  button {
+  text-align: center;  
+  background-color: $primary-color;
+  border: none;
+  border-radius: 6px;
+  max-width: auto;
+  height: 50px;
+  color: $white;
+  }
+}
+  
+.product-price-info {
+  img {
+  height: 10px;
+  width: auto;
+  margin-top: 15px;
+  margin-right: 5px;
+  }
+}
+  
+.buttons {
+  padding-top: 40px;
+  display: flex;
+  gap: 5px;
+  border-top: 1px solid $secondary-color;
+}
+  
+.delivery {
+  display: flex;
+  padding-top: 40px ;
+}
+  
+.delivery p { 
+  font-weight: bold;
+}
+
+.number {
+  color: $primary-color;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 991px) {
+
+.product-price-info {
+  width: 100%;
+  right: 0;
+  margin-top: 45px;
+  margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+
+  .product-price-info {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .buttons {
+    input {
+    height: 50px;
+    }
+  }
+}

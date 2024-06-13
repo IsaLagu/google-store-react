@@ -7,15 +7,15 @@ const ProductCarousel = ({ productsImages }) => {
   return (
     <div className="product-carousel">
       {productsImages.length === 1 ? null : (
-        <div class="imgs-device">
+        <div className="imgs-device">
           {productsImages.map((productImage) => (
-            <div class="div-icono" onClick={() => setSelectedImage(productImage)}>
-              <img class="img-icono" src={productImage} />
+            <div className="div-icono" onClick={() => setSelectedImage(productImage)}>
+              <img className="img-icono" src={productImage} />
             </div>
           ))}
         </div>
       )}
-      <div class="img-prev">
+      <div className="img-prev">
         <img src={selectedImage} />
       </div>
     </div>
