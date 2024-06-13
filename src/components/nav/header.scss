@@ -1,4 +1,4 @@
-@use '../styles/variables.scss' as v;
+@use '../../styles/variables.scss' as v;
 
 .header {
     display: grid;
@@ -18,13 +18,13 @@
     div{
         a{
             text-decoration: none;
-            color: v.$gray-color;
+            color: v.$text-color;
         }
         p{
-            color: v.$gray-color;
+            color: v.$text-color;
         }
         .btn-active{
-            color: v.$blue-color;
+            color: v.$primary-color;
             font-weight: 700;
         }
     }
@@ -39,9 +39,15 @@
     }    
     .menu-icon{
         display: none;
-        color: v.$blue-color;
+        color: v.$primary-color;
     }
 }
+
+.nav-mobile {
+    display: none;
+    cursor: pointer;
+}
+
 
 //mediaqueries
 @media only screen and (min-width: 415px) and (max-width: 768px) {
@@ -68,6 +74,10 @@
         .menu-icon{
             display: block;
         }
+    }
+
+    .nav-mobile {
+        display: block;
     }
     
 }

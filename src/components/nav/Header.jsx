@@ -1,4 +1,5 @@
 import './header.scss'
+import { BurgerMenu } from "./BurgerMenu";
 
 const Header = () => {
   return (
@@ -15,11 +16,11 @@ const Header = () => {
             <div><p>Suscriptions</p></div>
         </nav>
         <div className="icons">
-            <img src="./src/assets/icons/Search.svg" alt="" />
-            <img src="./src/assets/icons/Help.svg" alt="" />
-            <img src="./src/assets/icons/Cart.svg" alt="" />
-            <img src="./src/assets/icons/Avatar.svg" alt="" />
-            <img src="./src/assets/icons/Menu.svg" alt="" className="menu-icon" />
+            <img src="./src/assets/icons/Search.svg" alt="Search" />
+            <img src="./src/assets/icons/Help.svg" alt="Help" />
+            <img src="./src/assets/icons/Cart.svg" alt="Cart" />
+            <img src="./src/assets/icons/Avatar.svg" alt="My profile" />
+            <div className="nav-mobile"><BurgerMenu/></div>
         </div>
     </header>
   );

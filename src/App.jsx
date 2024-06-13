@@ -1,4 +1,4 @@
-import Header from './components/Header';
+import Header from './components/nav/Header';
 import "./App.css";
 
 export default function App() {

@@ -1,4 +1,5 @@
 import "./burgerMenu.scss";
+import "../../styles/index.scss"
 import { useState } from "react";
 
 export function BurgerMenu() {
@@ -24,29 +25,29 @@ export function BurgerMenu() {
                 <ul className={burgerOpen ? "links active" : "links hidden"}>
                     <li>
                         <img
-                            src="../../assets/BurgerMenu/phones.png"
+                            src={"src/assets/BurgerMenu/phones.png"}
                             alt="Phones"
                         />
                         <a href="/">Phones</a>
                     </li>
                     <li>
-                        <img src="" alt="Earbuds" />
+                        <img src={"src/assets/BurgerMenu/earbuds.png"} alt="Earbuds" />
                         <a href="/">Earbuds</a>
                     </li>
                     <li>
-                        <img src="" alt="Watches" />
+                        <img src={"src/assets/BurgerMenu/watches.png"} alt="Watches" />
                         <a href="/">Watches</a>
                     </li>
                     <li>
-                        <img src="" alt="Smart Home" />
+                        <img src={"src/assets/BurgerMenu/smart-home.png"} alt="Smart Home" />
                         <a href="/">Smart Home</a>
                     </li>
                     <li>
-                        <img src="" alt="Accesories" />
+                        <img src={"src/assets/BurgerMenu/accesories.png"} alt="Accesories" />
                         <a href="/">Accesories</a>
                     </li>
                     <li>
-                        <img src="" alt="Subscriptions" />
+                        <img src={"src/assets/BurgerMenu/subscriptions.png"} alt="Subscriptions" />
                         <a href="/">Subscriptions</a>
                     </li>
                 </ul>

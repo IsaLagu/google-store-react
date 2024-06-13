@@ -1,8 +1,18 @@
-@use 'variables' as v;
+@use "variables" as v;
 
 // Aquí estilos generales
 
 body {
     background-color: v.$white;
     font-family: v.$font;
+}
+
+a {
+    color: v.$text-color;
+    text-decoration: none;
+    font-weight: 400;
+
+    &:hover {
+        color: v.$primary-color;
+    }
 }
