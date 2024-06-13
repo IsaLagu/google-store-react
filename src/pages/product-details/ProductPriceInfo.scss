@@ -9,23 +9,12 @@
   margin-bottom: 40px;
 }
   
-.product-price-info {
-  &h2,
-  &br,
-  &input,
-  &button,
-  &img,
-  &p {
-    display: block;
-    width: 100%;
-  }
-  input {
-    width: 80px;
-    border-radius: 6px;
-    border-style: solid;
-    border-width: 1px;
-    padding-left: 20px;
-  }
+.quantityInput {
+  width: 20%;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+  padding-left: 20px;
 }
   
 .total {
@@ -35,18 +24,6 @@
   letter-spacing: 2px;
   margin-top: 15px;
   margin-bottom: 8px;
-}
-  
-.product-price-info {
-  button {
-  text-align: center;  
-  background-color: $primary-color;
-  border: none;
-  border-radius: 6px;
-  max-width: auto;
-  height: 50px;
-  color: $white;
-  }
 }
   
 .product-price-info {
