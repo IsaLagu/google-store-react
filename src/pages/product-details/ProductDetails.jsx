@@ -2,6 +2,7 @@ import "./ProductDetails.scss";
 import ProductCarousel from "./ProductCarousel";
 import ProductInfo from "./ProductInfo";
 import ProductPriceInfo from "./ProductPriceInfo";
+import ProductSelectColor from "./ProductSelectColor";
 import earbuds_01 from "../../assets/earbuds/earbuds_01.png";
 import earbuds_02 from "../../assets/earbuds/earbuds_02.png";
 import earbuds_03 from "../../assets/earbuds/earbuds_03.png";
@@ -16,6 +17,7 @@ const ProductDetails = () => {
       <section className="section-info-device">
         <ProductInfo name="Google Pixel Buds Pro" description="Music & Sound" price={229} />
         <ProductPriceInfo />
+        <ProductSelectColor />
       </section>
     </div>
   );
