@@ -1,16 +1,18 @@
-import { products } from 'data.jsx';
+import { products } from '../assets/data/Data.jsx';
 
 export default function List() {
   const listItems = products.map(product =>
     <div>
         <li key={product.id}>
-        <img src={product.image[0]} alt={product.title} />
-        <p>{product.name}</p>
+        <img src={product.property[0]} alt={product.title} />
+        <p>{product.title}</p>
         <p>{product.price}</p>  
-        <div style='background-color:{product.color[0]};'></div>  
+        <p>{product.category}</p>  
+        <p>{product.color}</p>  
         </li>
     </div>
   );
+  
   return (
     <main>
     {listItems}

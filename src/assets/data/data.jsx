@@ -3,13 +3,39 @@ export const products = [{
     title: 'Fitbit Inspire 3',
     price: 99.50,
     category: 'Health & Fitness Tracker',
-    color: ['Midnight Zen','Lilac Bliss','Morning Glow'],
-    image: ['../assets/smartwatch/smartwatch_black.png','../assets/smartwatch/smartwatch_pink.png','../assets/smartwatch/smartwatch_yellow.png'],
+    property: [{
+      color:'Midnight Zen',
+      imgSrc:'smartwatch_black.png',
+    },{
+      color:'Lilac Bliss',
+      imgSrc:'smartwatch_pink.png',
+    },{
+      color:'Morning Glow',
+      imgSrc:'smartwatch_yellow.png',
+    }]
+    
   },{
     id: 1,
     title: 'Google Pixel Buds Pro',
     category: 'Music & Sound',
     price: 229,
-    color: ['#9FC7EC', '#E7E3E0','#4B4B4D','#D2D7DA','#DFE5B7','#E18570'],
-    image: ['../assets/earbuds/assets/earbuds/earbuds_01.png','../assets/earbuds/assets/earbuds/earbuds_02.png','../assets/earbuds/assets/earbuds/earbuds_03.png','../assets/earbuds/assets/earbuds/earbuds_04.png' ],
+    property:[{
+        color:'Bay',
+        imgSrc:['earbuds_01.png','earbuds_02.png','earbuds_03.png','earbuds_04.png'],
+      },{
+        color:'Porcelain',
+        imgSrc:['earbuds_01.png','earbuds_02.png','earbuds_03.png','earbuds_04.png'],
+      },{
+        color:'Charcoal',
+        imgSrc:['earbuds_01.png','earbuds_02.png','earbuds_03.png','earbuds_04.png'],
+      },{
+        color:'Fog',
+        imgSrc:['earbuds_01.png','earbuds_02.png','earbuds_03.png','earbuds_04.png'],
+      },{
+        color:'Lemongrass',
+        imgSrc:['earbuds_01.png','earbuds_02.png','earbuds_03.png','earbuds_04.png'],
+      },{
+        color:'Coral',
+        imgSrc:['earbuds_01.png','earbuds_02.png','earbuds_03.png','earbuds_04.png'],
+      }]
   }];
