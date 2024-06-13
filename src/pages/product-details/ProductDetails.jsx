@@ -16,8 +16,10 @@ const ProductDetails = () => {
       </section>
       <section className="section-info-device">
         <ProductInfo name="Google Pixel Buds Pro" description="Music & Sound" price={229} />
-        <ProductPriceInfo />
-        <ProductSelectColor />
+        <div className="product-selector-container">
+          <ProductSelectColor />
+          <ProductPriceInfo />
+        </div>
       </section>
     </div>
   );
