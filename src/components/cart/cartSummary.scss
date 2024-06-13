@@ -1,0 +1,7 @@
+@use '../../styles/variables' as v;
+
+.summaryColRight {
+ border: 1px solid black;   
+ background-color: v.$background-color;
+ border-radius: 5px;
+}

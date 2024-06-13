@@ -1,4 +1,4 @@
-import Delivery from 'src/components/delivery.jsx';
+import Delivery from './Delivery.jsx';
 
 const ProductContainer = () => {
     return (

@@ -1,0 +1,11 @@
+@use '../../styles/variables' as v;
+
+.shoppingCart {
+    background-color: v.$white;
+}
+
+.cartColumns {
+    display: inline-flex;
+    flex-direction: row;
+}
+

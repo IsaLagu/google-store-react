@@ -1,20 +1,24 @@
+import './styles/variables.scss';
 import './styles/app.scss';
-import './styles/delivery.scss';
-import ProductDetails from './pages/product'
-import Delivery from './components/delivery.jsx';
-//import ProductContainer from './components/productContainer.jsx';
+import './components/cart/delivery.scss';
+import './components/cart/cart.scss';
+//import ProductDetails from './pages/product-details/ProductDetails.jsx'
+//import Delivery from './components/cart/Delivery.jsx';
+import ProductContainer from './components/cart/ProductContainer.jsx';
+import Cart from './components/cart/Cart.jsx';
 
 function App() {
     return (
         <>
+              
         <div>
-          <ProductDetails />
+            <Cart/>
         </div>
         <div className='cartContainer'>
-            <Delivery/>
+            <ProductContainer/>
         </div>
-    );
+        </>
+    )
 }
 
-export default App
 export default App
