@@ -8,7 +8,7 @@ const Header = () => {
         </div>
         <nav className="navbar">
             <div><p>Phones</p></div>
-            <div><a href="./earbuds.html"><p>Earbuds</p></a></div>
+            <div><a href=""><p>Earbuds</p></a></div>
             <div><p className="btn-active">Watches</p></div>
             <div><p>Smart Home</p></div>
             <div><p>Accesories</p></div>
