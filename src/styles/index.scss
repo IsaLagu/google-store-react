@@ -1,0 +1,8 @@
+@use 'variables' as v;
+
+// Aquí estilos generales
+
+body {
+    background-color: v.$white;
+    font-family: v.$font;
+}
