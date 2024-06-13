@@ -1,11 +1,12 @@
-import Nav from "./components/nav/Nav";
+import Header from './components/Header';
 import "./App.css";
 
 export default function App() {
     return (
-        <div>
-            <h1>Funciona</h1>
-            <Nav/>
+        <div className="App">
+            <Header />
         </div>
     );
 }
+
+//export default App;

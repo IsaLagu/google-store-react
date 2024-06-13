@@ -1,0 +1,73 @@
+@use '../styles/variables.scss' as v;
+
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 10px;    
+    box-shadow: v.$box-shadow;
+    margin-bottom: 30px;
+    .logo img {
+        width: 40px; 
+    }
+}
+.navbar {
+    display: flex;
+    padding-left: 10px;
+    gap:15px;
+    div{
+        a{
+            text-decoration: none;
+            color: v.$gray-color;
+        }
+        p{
+            color: v.$gray-color;
+        }
+        .btn-active{
+            color: v.$blue-color;
+            font-weight: 700;
+        }
+    }
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    gap:20px;
+    img {
+        width: 20px;
+    }    
+    .menu-icon{
+        display: none;
+        color: v.$blue-color;
+    }
+}
+
+//mediaqueries
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+    .navbar{
+        gap: 5px;
+    }
+    .icons {
+        gap: 10px;
+    }
+    .menu-icon{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .header{
+        width: 100%;
+    }
+    .navbar {
+        display: none;
+    }
+    .icons {
+        gap: 20px;
+        .menu-icon{
+            display: block;
+        }
+    }
+    
+}
