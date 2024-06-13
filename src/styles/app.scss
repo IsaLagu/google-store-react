@@ -1,0 +1,5 @@
+@use 'variables' as v;
+
+.maintext {
+    background-color: v.$primary-color;
+}
