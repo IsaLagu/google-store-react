@@ -1,9 +1,9 @@
 import "./ProductDetails.scss";
 import ProductCarousel from "./ProductCarousel";
-import earbuds_01 from "../../assets/earbuds/earbuds_01.png";
-import earbuds_02 from "../../assets/earbuds/earbuds_02.png";
-import earbuds_03 from "../../assets/earbuds/earbuds_03.png";
-import earbuds_04 from "../../assets/earbuds/earbuds_04.png";
+import earbuds_01 from "../../../assets/earbuds/earbuds_01.png";
+import earbuds_02 from "../../../assets/earbuds/earbuds_02.png";
+import earbuds_03 from "../../../assets/earbuds/earbuds_03.png";
+import earbuds_04 from "../../../assets/earbuds/earbuds_04.png";
 import ProductInfo from "./ProductInfo";
 
 const ProductDetails = () => {
