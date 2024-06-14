@@ -41,3 +41,4 @@ El desarrollo del proyecto se llevó a cabo en un entorno colaborativo utilizand
 - [Lynn Poh](https://github.com/Dpoetess)
 - [Laura Gil](https://github.com/LauraGDev)
 - [Adriana Aguirre](https://github.com/Adrianaortiz00)
+
