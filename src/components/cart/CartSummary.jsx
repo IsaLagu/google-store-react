@@ -1,4 +1,5 @@
 import './cartSummary.scss';
+import Button from '../Button.jsx';
 
 export default function CartSummary() {
    
@@ -11,7 +12,6 @@ export default function CartSummary() {
           <h3 className="ff summaryTitle">Order Summary</h3>
           <div className="lineTotals">
               <div className="subtotals">
-              {/* flex justify-between pt-8 */}
                   <div className="totalsSpacing">
                   <p className="ff summaryText textBold">Subtotal</p>
                   <div className="ff summaryText">{subtotal.toFixed(2)} €</div>
@@ -20,7 +20,7 @@ export default function CartSummary() {
                   <p className="ff summaryText textBold">Shipping costs</p>
                   <p className="ff summaryText">4.90 €</p>
                   </div>
-                  <div className="totalsSpacing">
+                  <div className="totalsSpacing lastItem">
                   <p className="ff summaryText textBold">estimated VAT</p>
                   <p className="ff summaryText">including</p>
                   </div>
@@ -33,10 +33,10 @@ export default function CartSummary() {
                   <div className ="ff calcInstallment">or {total.toFixed(2)/3}€/month</div>
                   <p className="ff calcInstallment">with 3 monthly installments *</p>
               </div>
-  
-              <button className="purchaseButton">
-                Complete the purchase
-              </button>
+            <div>
+                <Button width="100%">Complete the purchase</Button>
+            </div> 
+
           </div>
       </div>
     );
