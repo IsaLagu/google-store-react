@@ -17,12 +17,16 @@
     background-color: v.$background-color;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 5%;
+    width: 100%;
     
     //border: 1px solid blue;
 }
 
 .productAdded {
-    display: inline-flex;
+    display: flex;
+    //flex-wrap: wrap;
     flex-direction: row;
 }
 
@@ -32,20 +36,16 @@
 
 .cartProdInfo {
     padding-right: 30px;
-    margin-right: 50px;
+    //margin-right: 50px;
+    border:1px solid red;
+    width: 100%;
+    
 }
 .productDesc {
     margin-bottom: 0;
 }
 
-.qntySelect {
-    background-color: v.$background-color;
-    color: v.$text-color;
-    font-family: v.$font;
-    font-size: 1em;
-    border: none;
-    margin-top: 0;
-}
+
 
 .removeFromCart {
     font-weight: bold;
@@ -56,6 +56,8 @@
 .cartItemPrice {
     justify-content: right;
     align-content: end;
+    width: 30%;
+    border:1px solid red;
 }
 
 .delivInfo {

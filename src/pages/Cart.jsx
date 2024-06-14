@@ -1,6 +1,6 @@
 import './cart.scss';
-import CartSummary from "./CartSummary";
-import CartProdContainer from "./CartProdContainer";
+import CartSummary from "../components/cart/CartSummary";
+import CartProdContainer from "../components/cart/CartProdContainer";
 
 export default function Cart() {
    /*  const [cartItems, setCartItems] = useState([]);
@@ -20,7 +20,10 @@ export default function Cart() {
             </section>
 
             <section className='cartColumns'>
-            <div className="itemsInCart"><CartProdContainer/></div>
+            <div className="allItemsInCart">
+                <div className="itemsInCart"><CartProdContainer/></div>
+                <div className="itemsInCart"><CartProdContainer/></div>
+            </div>
             <aside className="cartSummary"><CartSummary/></aside>
             </section>
         </main>
