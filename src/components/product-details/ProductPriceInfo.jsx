@@ -6,8 +6,8 @@ const ProductPriceInfo = () => {
       <p className="total">229 €</p>
       <br />
       <div className="buttons">
-        <input type="number" id="quantity" min="1" value="1" />
-        <button type="button">Add to Cart</button>
+        <input type="number" className="quantityInput" min="1" value="1" />
+        <Button width="80%">Add to cart</Button>
       </div>
       <div className="delivery">
         <img src="./images/icons/Delivery.svg" alt="shopping cart" />

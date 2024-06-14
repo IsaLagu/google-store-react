@@ -1,4 +1,4 @@
-import ProductDetails from "./pages/product-details/ProductDetails";
+import ProductDetails from "../src/pages/ProductDetails";
 
 export default function App() {
   return (
@@ -7,5 +7,3 @@ export default function App() {
     </div>
   );
 }
-
-//export default App;
