@@ -1,20 +1,12 @@
 @import "../../styles/variables.scss";
 
 .product-price-info {
-  background-color: $background-color-img;
+  background-color: $background-color;
   display: block;
   padding: 15px;
   margin-top: 110px;
   border-radius: 10px;
   margin-bottom: 40px;
-}
-  
-.quantityInput {
-  width: 20%;
-  border-radius: 6px;
-  border-style: solid;
-  border-width: 1px;
-  padding-left: 20px;
 }
   
 .total {
@@ -76,11 +68,5 @@
   .buttons {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .buttons {
-    input {
-    height: 50px;
-    }
   }
 }

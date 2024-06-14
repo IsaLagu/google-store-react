@@ -1,4 +1,6 @@
 import "./ProductPriceInfo.scss";
+import Button from "../Button";
+import QntySelect from "../../components/cart/QntySelect";
 
 const ProductPriceInfo = () => {
   return (
@@ -6,7 +8,7 @@ const ProductPriceInfo = () => {
       <p className="total">229 €</p>
       <br />
       <div className="buttons">
-        <input type="number" className="quantityInput" min="1" value="1" />
+        <QntySelect width="20%" />
         <Button width="80%">Add to cart</Button>
       </div>
       <div className="delivery">
