@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+
+$blue: rgba(159, 198, 232, 1);
+$beige: rgba(232, 227, 222, 1);
+$darkgray: rgba(76, 76, 78, 1);
+$lightgray: rgba(210, 215, 218, 1);
+$lime: rgba(223, 229, 183, 1);
+$orange: rgba(227, 132, 114, 1);
+
+.set-color {
+  display: flex;
+  gap: 5px;
+}
+  
+.circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border-style:solid;
+  border-width: 1px;
+  border-color: $text-color;
+}
+  
+.circle-blue {
+  background-color: $blue;
+}
+
+.circle-beige {
+  background-color: $beige;
+}
+
+.circle-darkgray {
+  background-color: $darkgray;
+}
+  
+.circle-lightgray {
+  background-color: $lightgray;
+}
+
+.circle-lime {
+  background-color: $lime;
+}
+
+.circle-orange {
+  background-color: $orange;
+}
+  
