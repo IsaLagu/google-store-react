@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./burgerMenu.scss";
 import "../../styles/index.scss"
 import { useState } from "react";
@@ -24,31 +25,31 @@ export function BurgerMenu() {
                 </div>
                 <ul className={burgerOpen ? "links active" : "links hidden"}>
                     <li>
-                        <img
-                            src={"src/assets/BurgerMenu/phones.png"}
-                            alt="Phones"
-                        />
-                        <a href="/">Phones</a>
+                        <img src={"src/assets/BurgerMenu/phones.png"} alt="Phones"/>
+                        <NavLink to="#" onClick={toggleBurger}>Phones</NavLink>
                     </li>
                     <li>
                         <img src={"src/assets/BurgerMenu/earbuds.png"} alt="Earbuds" />
-                        <a href="/">Earbuds</a>
+                        <NavLink className={({ isActive }) => isActive ? "active-link" : null }
+                    to="/earbuds" onClick={toggleBurger}>Earbuds</NavLink>
+                
                     </li>
                     <li>
                         <img src={"src/assets/BurgerMenu/watches.png"} alt="Watches" />
-                        <a href="/">Watches</a>
+                        <NavLink className={({ isActive }) => isActive ? "active-link" : null}
+                    to="/watches" onClick={toggleBurger}>Watches</NavLink>
                     </li>
                     <li>
                         <img src={"src/assets/BurgerMenu/smart-home.png"} alt="Smart Home" />
-                        <a href="/">Smart Home</a>
+                        <NavLink to="#" onClick={toggleBurger}>Smart Home</NavLink>
                     </li>
                     <li>
-                        <img src={"src/assets/BurgerMenu/accesories.png"} alt="Accesories" />
-                        <a href="/">Accesories</a>
+                        <img src={"src/assets/BurgerMenu/accesories.png"} alt="Accessories" />
+                        <NavLink to="#" onClick={toggleBurger}>Accessories</NavLink>
                     </li>
                     <li>
                         <img src={"src/assets/BurgerMenu/subscriptions.png"} alt="Subscriptions" />
-                        <a href="/">Subscriptions</a>
+                        <NavLink to="#" onClick={toggleBurger}>Subscriptions</NavLink>
                     </li>
                 </ul>
             </nav>
