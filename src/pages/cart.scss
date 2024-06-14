@@ -1,6 +1,7 @@
 @use '../styles/variables' as v;
 
 .shoppingCart {
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: v.$primary-color;
@@ -33,19 +34,20 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    padding: 0 5%;
+    //padding: 0 5%;
     //gap: 20px;
     margin-top: 3%;
+    justify-content: space-around;
 }
 .allItemsInCart {
-    width: 50%;
-    border-radius: 15px;
-
-}
+    width: 60%;
+    background-color: v.$background-color;
+    border-radius: 5px;
+} 
 
 .itemsInCart {
     //float:left;
-    width: 80%;
+    //width: 100%;
     border-bottom: 1px solid v.$text-color;
 }
 
