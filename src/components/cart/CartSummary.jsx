@@ -3,31 +3,31 @@ import './cartSummary.scss';
 export default function CartSummary() {
    
     //const [total, setTotal] = useState(0);
-    let subtotal = 199;
-    let total = 500;
+    let subtotal = 428.90;
+    let total = 433.80;
 
     return (
       <div className="summaryColRight">
-          <h3 className="summaryTitle">Order Summary</h3>
+          <h3 className="ff summaryTitle">Order Summary</h3>
           <div className="lineTotals">
               <div className="subtotals">
               {/* flex justify-between pt-8 */}
-                  <p className="summaryText">Subtotal</p>
-                  <div className="summaryPrice">{subtotal.toFixed(2)} €</div>
+                  <p className="ff summaryText textBold">Subtotal</p>
+                  <div className="ff summaryText">{subtotal.toFixed(2)} €</div>
                
-                  <p className="summaryText">Shipping costs</p>
-                  <p className="summaryPrice">4.90 €</p>
+                  <p className="ff summaryText textBold">Shipping costs</p>
+                  <p className="ff summaryText">4.90 €</p>
   
-                  <p className="summaryText">estimated VAT</p>
-                  <p className="summaryPrice">including</p>
+                  <p className="ff summaryText textBold">estimated VAT</p>
+                  <p className="ff summaryText">including</p>
               </div>
               <div className="finalTotal">                
-                  <p className="totalText">Total estimated</p>
-                  <div className="totalPrice">{total.toFixed(2)} €</div>
+                  <p className="ff textBold">Total estimated</p>
+                  <div className="ff">{total.toFixed(2)} €</div>
               </div>
               <div className = "installment">
-                  <div className ="calcInstallment">or {total.toFixed(2)}€/month</div>
-                  <p>with 3 monthly installments *</p>
+                  <div className ="ff calcInstallment">or {total.toFixed(2)/3}€/month</div>
+                  <p className="ff calcInstallment">with 3 monthly installments *</p>
               </div>
   
               <button className="purchaseButton">

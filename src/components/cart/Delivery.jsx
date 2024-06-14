@@ -1,3 +1,4 @@
+import './delivery.scss';
 
 const Delivery = () => {
     return (
