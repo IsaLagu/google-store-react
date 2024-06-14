@@ -12,14 +12,18 @@ export default function CartSummary() {
           <div className="lineTotals">
               <div className="subtotals">
               {/* flex justify-between pt-8 */}
+                  <div className="totalsSpacing">
                   <p className="ff summaryText textBold">Subtotal</p>
                   <div className="ff summaryText">{subtotal.toFixed(2)} €</div>
-               
+                  </div>
+                  <div className="totalsSpacing">
                   <p className="ff summaryText textBold">Shipping costs</p>
                   <p className="ff summaryText">4.90 €</p>
-  
+                  </div>
+                  <div className="totalsSpacing">
                   <p className="ff summaryText textBold">estimated VAT</p>
                   <p className="ff summaryText">including</p>
+                  </div>
               </div>
               <div className="finalTotal">                
                   <p className="ff textBold">Total estimated</p>
