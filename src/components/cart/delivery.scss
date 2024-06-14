@@ -1,20 +1,14 @@
-@use 'variables' as v;
+@use '../../styles/variables' as v;
 
 .deliveryInfo {
     display: flex;
-    //flex-direction: row;
-    //align-content: left;
-    //align-items: left;
     align-items: center;
-    //text-align: left;
     justify-content:left;
-    width: 20%;
-    //font-family: $font;
+    width: 70%;
     font-weight: bold;
     background-color: v.$white;
-    border: 1px solid black;
     border-radius: 5px;
-    //row-gap: 10px;
+
 }
 
 .truckIcon {

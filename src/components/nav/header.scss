@@ -1,0 +1,88 @@
+@use '../../styles/variables.scss' as v;
+
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 10px;    
+    box-shadow: v.$box-shadow;
+    margin-bottom: 30px;
+    z-index: 1000;
+    .logo img {
+        width: 40px; 
+    }
+}
+.navbar {
+    display: flex;
+    padding-left: 10px;
+    gap:15px;
+    div{
+        a{
+            text-decoration: none;
+            color: v.$text-color;
+        }
+        p{
+            color: v.$text-color;
+        }
+    }
+    .active-link{
+        color: v.$primary-color;
+    }
+} 
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    gap:20px;
+    img {
+        width: 20px;
+    }    
+    .menu-icon{
+        display: none;
+        color: v.$primary-color;
+    }
+    .active-link {
+        img {
+            filter: invert(31%) sepia(41%) saturate(4253%) hue-rotate(205deg) brightness(98%) contrast(86%);
+        }
+    }
+}
+
+.nav-mobile {
+    display: none;
+    cursor: pointer;
+}
+
+
+//mediaqueries
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+    .navbar{
+        gap: 5px;
+    }
+    .icons {
+        gap: 10px;
+    }
+    .menu-icon{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .header{
+        width: 100%;
+    }
+    .navbar {
+        display: none;
+    }
+    .icons {
+        gap: 20px;
+        .menu-icon{
+            display: block;
+        }
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+    
+}

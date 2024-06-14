@@ -16,7 +16,7 @@ function App() {
         <div className="App">
             <Api />
         </div>
-    )
+    );
 }
 
 export default App
