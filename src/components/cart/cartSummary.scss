@@ -29,4 +29,13 @@
  background-color: v.$background-color;
  border-radius: 5px;
  width: 100%;
+ padding: 10%;
+ margin-right: 10%;
+}
+
+.totalsSpacing {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
 }
