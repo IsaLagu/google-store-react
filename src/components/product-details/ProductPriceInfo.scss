@@ -1,0 +1,59 @@
+@import "../../styles/variables.scss";
+
+.product-price-info {
+  background-color: $background-color;
+  display: block;
+  padding: 15px;
+  margin-top: 110px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+  
+.total {
+  font-size: 35px;
+  color: $secondary-color;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+  
+.buttons {
+  padding-top: 40px;
+  display: flex;
+  gap: 5px;
+  border-top: 1px solid $secondary-color;
+}
+  
+.delivery {
+  display: flex;
+  padding-top: 50px ;
+}
+
+.number {
+  color: $primary-color;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 991px) {
+
+.product-price-info {
+  width: 100%;
+  right: 0;
+  margin-top: 45px;
+  margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+
+  .product-price-info {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

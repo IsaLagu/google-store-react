@@ -1,0 +1,64 @@
+@use '../../styles/variables' as v;
+
+.ff {
+    font-family: v.$font;
+}
+
+.summaryText {
+    font-size: 0.7em;
+    color: v.$text-color;
+}
+
+.textBold {
+    font-weight: bold;
+}
+
+.cartProdContainer {
+    background-color: v.$background-color;
+    display: flex;
+    flex-wrap: wrap;
+    
+    //border: 1px solid blue;
+}
+
+.productAdded {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.imgInCart {
+    width: 80px;
+}
+
+.cartProdInfo {
+    padding-right: 30px;
+    margin-right: 50px;
+}
+.productDesc {
+    margin-bottom: 0;
+}
+
+.qntySelect {
+    background-color: v.$background-color;
+    color: v.$text-color;
+    font-family: v.$font;
+    font-size: 1em;
+    border: none;
+    margin-top: 0;
+}
+
+.removeFromCart {
+    font-weight: bold;
+    font-size: 0.7em;
+    color: v.$primary-color;
+}
+
+.cartItemPrice {
+    justify-content: right;
+    align-content: end;
+}
+
+.delivInfo {
+    width: 100%;
+    padding: 20px;
+} 

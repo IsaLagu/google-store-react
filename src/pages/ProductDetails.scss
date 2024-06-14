@@ -1,9 +1,10 @@
 .product-details {
     display: flex;
+    padding: 10px;
 }
 
 .section-view-device {
-  width:60%;
+  width: 60%;
   display: flex;
 }
 
@@ -17,18 +18,33 @@
 }
 
 @media only screen and (max-width: 991px) {
-  .section-view-device {
+  .container-view-device {
     width: 100%;
    }
 
+   .section-view-device {
+    width: 100%;
+  }
+
   .section-info-device {
     width: 100%;
+    display: block;
     padding-left: 0;
     margin-top: 50px;
   }
 
   .product-details {
     display: block;
+  }
+
+  .product-selector-container {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .product-selector-container {
+    flex-direction: column;
   }
 }
 
