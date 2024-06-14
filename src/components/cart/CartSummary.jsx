@@ -25,7 +25,7 @@ export default function CartSummary() {
                   <p className="ff summaryText">including</p>
                   </div>
               </div>
-              <div className="finalTotal">                
+              <div className="totalsSpacing finalTotal">                
                   <p className="ff textBold">Total estimated</p>
                   <div className="ff">{total.toFixed(2)} €</div>
               </div>
