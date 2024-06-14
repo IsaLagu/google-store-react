@@ -1,5 +1,6 @@
 import './cartProdContainer.scss';
 import Delivery from './Delivery.jsx';
+import QntySelect from './QntySelect.jsx';
 
 const CartProdContainer = () => {
        
@@ -12,7 +13,8 @@ const CartProdContainer = () => {
             <div className="cartProdInfo">
                 <p className="ff productDesc summaryText">Google Pixel Buds Pro in light blue</p>
                 <span className="ff summaryText">Cant: 
-                <select className="qntySelect">
+                <QntySelect/>
+                {/* <select className="qntySelect">
                     {[
                         ...Array(10).keys(),
                     ].map(number => {
@@ -22,7 +24,7 @@ const CartProdContainer = () => {
                         </option>
                     })
                     }
-                </select>
+                </select> */}
                 </span>
             </div>
             <div className="cartItemPrice">
