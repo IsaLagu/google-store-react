@@ -1,17 +1,10 @@
-import Api from './components/Api';
-
-/*const App = () => {
-  return (
-    <div className="App"><Api /></div>
-  )
-}*/
+import Header from './components/nav/Header';
+import "./App.css";
 
 export default function App() {
     return (
         <div className="App">
-            <Api />
+            <Header />
         </div>
     );
 }
-
-//export default App;
