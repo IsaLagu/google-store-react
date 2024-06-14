@@ -1,3 +1,11 @@
+import Api from './components/Api';
+
+/*const App = () => {
+  return (
+    <div className="App"><Api /></div>
+  )
+}*/
+
 import './styles/app.scss';
 import './styles/delivery.scss';
 import Delivery from './components/delivery.jsx';
@@ -5,8 +13,8 @@ import Delivery from './components/delivery.jsx';
 
 function App() {
     return (
-        <div className='cartContainer'>
-            <Delivery/>
+        <div className="App">
+            <Api />
         </div>
     )
 }
