@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import "./burgerMenu.scss";
-import "../../styles/index.scss"
 import { useState } from "react";
 
 export function BurgerMenu() {
