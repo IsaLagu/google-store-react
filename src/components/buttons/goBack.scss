@@ -1,0 +1,11 @@
+.atras {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    &:hover {
+        img{
+            filter: invert(31%) sepia(41%) saturate(4253%) hue-rotate(205deg) brightness(98%) contrast(86%);
+        }
+    }
+}
