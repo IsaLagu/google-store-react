@@ -1,22 +1,27 @@
-import Api from './components/Api';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/nav/Header";
+import Footer from "./components/footer/Footer";
+import "./styles/app.scss";
+import ProductDetails from "./pages/ProductDetails";
+//import Cart from "./pages/Cart";
+import { products } from "./assets/data/data.jsx";
 
-/*const App = () => {
+export default function App() {
   return (
-    <div className="App"><Api /></div>
-  )
-}*/
-
-import './styles/app.scss';
-import './styles/delivery.scss';
-import Delivery from './components/delivery.jsx';
-//import ProductContainer from './components/productContainer.jsx';
-
-function App() {
-    return (
-        <div className="App">
-            <Api />
-        </div>
-    );
+    <div className="App">
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<ProductDetails />} />
+          {/* <Route path="/cart" element={<Cart />} /> */}
+          <Route path="/:id" element={<ProductDetails />} />
+          {/* <Route path="/earbuds" element={<ProductDetails product={products[1]} />} /> */}
+          {/* <Route path="/watches" element={<ProductDetails product={products[0]} />} /> */}
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App

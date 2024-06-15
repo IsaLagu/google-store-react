@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import "./ProductCarousel.scss";
 
-const ProductCarousel = ({ productsImages }) => {
-  const [selectedImage, setSelectedImage] = useState(productsImages[0]);
+const ProductCarousel = ({ productImages, productId }) => {
+  const [selectedImage, setSelectedImage] = useState(productImages[0]);
 
   return (
     <div className="product-carousel">
-      {productsImages.length === 1 ? null : (
+      {productImages.length === 1 ? null : (
         <div className="imgs-device">
-          {productsImages.map((productImage) => (
-            <div className="div-icono" onClick={() => setSelectedImage(productImage)}>
-              <img className="img-icono" src={productImage} />
+          {productImages.map((productImage) => (
+            <div key={productImage} className="div-icono" onClick={() => setSelectedImage(productImage)}>
+              <img className="img-icono" src={`/${productId}/${productImage}`} />
             </div>
           ))}
         </div>
       )}
       <div className="img-prev">
-        <img src={selectedImage} />
+        <img src={`/${productId}/${selectedImage}`} />
       </div>
     </div>
   );

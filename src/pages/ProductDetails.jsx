@@ -3,25 +3,34 @@ import ProductCarousel from "../components/product-details/ProductCarousel";
 import ProductInfo from "../components/product-details/ProductInfo";
 import ProductPriceInfo from "../components/product-details/ProductPriceInfo";
 import ProductSelectColor from "../components/product-details/ProductSelectColor";
-import earbuds_01 from "../assets/earbuds/earbuds_01.png";
-import earbuds_02 from "../assets/earbuds/earbuds_02.png";
-import earbuds_03 from "../assets/earbuds/earbuds_03.png";
-import earbuds_04 from "../assets/earbuds/earbuds_04.png";
+import { useParams } from "react-router-dom";
+import { products } from "../assets/data/data";
+import GoBack from "../components/buttons/GoBack";
 
 const ProductDetails = () => {
+  const { id = "earbuds" } = useParams();
+
+  const product = products.find((product) => product.id === id);
+
   return (
-    <div className="product-details">
-      <section className="section-view-device">
-        <ProductCarousel productsImages={[earbuds_01, earbuds_02, earbuds_03, earbuds_04]} />
-      </section>
-      <section className="section-info-device">
-        <ProductInfo name="Google Pixel Buds Pro" description="Music & Sound" price={229} />
-        <div className="product-selector-container">
-          <ProductSelectColor />
-          <ProductPriceInfo />
-        </div>
-      </section>
-    </div>
+    <article className="product">
+      <GoBack text={"See product details"} />
+      <div className="product-details">
+        <section className="section-view-device">
+          <ProductCarousel
+            productId={product.id}
+            productImages={product.property.find((ele) => ele.color === "Bay").imgSrc}
+          />
+        </section>
+        <section className="section-info-device">
+          <ProductInfo name={product.title} description={product.category} price={product.price} />
+          <div className="product-selector-container">
+            <ProductSelectColor />
+            <ProductPriceInfo />
+          </div>
+        </section>
+      </div>
+    </article>
   );
 };
 
