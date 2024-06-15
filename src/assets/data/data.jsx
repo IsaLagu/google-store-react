@@ -1,6 +1,6 @@
 export const products = [
   {
-    id: "smartwatch",
+    id: "watches",
     title: "Fitbit Inspire 3",
     price: 99.5,
     category: "Health & Fitness Tracker",

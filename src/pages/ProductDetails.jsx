@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 import { products } from "../assets/data/data";
 
 const ProductDetails = () => {
-  const { id } = useParams();
+  const { id = "earbuds" } = useParams();
 
   const product = products.find((product) => product.id === id);
 

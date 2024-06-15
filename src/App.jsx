@@ -12,9 +12,9 @@ export default function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<ProductDetails product={products.id} />} />
-          <Route path="/products/:id" element={<ProductDetails />} />
+          <Route path="/" element={<ProductDetails />} />
           {/* <Route path="/cart" element={<Cart />} /> */}
+          <Route path="/:id" element={<ProductDetails />} />
           {/* <Route path="/earbuds" element={<ProductDetails product={products[1]} />} /> */}
           {/* <Route path="/watches" element={<ProductDetails product={products[0]} />} /> */}
         </Routes>
