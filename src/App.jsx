@@ -17,8 +17,11 @@ import Cart from './pages/Cart.jsx';
 
 function App() {
     return (
-        <div className="App">
+/*      <div className="App">
             <Api />
+        </div> */
+        <div>
+          <Cart/>
         </div>
     );
 }
