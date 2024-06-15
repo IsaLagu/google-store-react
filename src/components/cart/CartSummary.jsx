@@ -5,7 +5,8 @@ export default function CartSummary() {
    
     //const [total, setTotal] = useState(0);
     let subtotal = 428.90;
-    let total = 433.80;
+    let shipping = 4.90;
+    let total = subtotal + shipping;
 
     return (
       <div className="summaryColRight">
@@ -18,7 +19,7 @@ export default function CartSummary() {
                   </div>
                   <div className="totalsSpacing">
                   <p className="ff summaryText textBold">Shipping costs</p>
-                  <p className="ff summaryText">4.90 €</p>
+                  <p className="ff summaryText">{shipping.toFixed(2)} €</p>
                   </div>
                   <div className="totalsSpacing lastItem">
                   <p className="ff summaryText textBold">estimated VAT</p>
