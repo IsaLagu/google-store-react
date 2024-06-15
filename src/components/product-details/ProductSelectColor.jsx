@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "./ProductSelectColor.scss";
 
 const ProductSelectColor = ({ product, onChange }) => {
@@ -12,6 +13,11 @@ const ProductSelectColor = ({ product, onChange }) => {
       </div>
     </div>
   );
+};
+
+ProductSelectColor.propTypes = {
+  product: PropTypes.object,
+  onChange: PropTypes.func,
 };
 
 export default ProductSelectColor;
