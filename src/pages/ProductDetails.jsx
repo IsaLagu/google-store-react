@@ -3,6 +3,7 @@ import ProductCarousel from "../components/product-details/ProductCarousel";
 import ProductInfo from "../components/product-details/ProductInfo";
 import ProductPriceInfo from "../components/product-details/ProductPriceInfo";
 import ProductSelectColor from "../components/product-details/ProductSelectColor";
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { products } from "../assets/data/data";
 import GoBack from "../components/buttons/GoBack";
@@ -37,3 +38,4 @@ const ProductDetails = () => {
 };
 
 export default ProductDetails;
+
