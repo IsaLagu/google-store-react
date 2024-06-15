@@ -45,7 +45,7 @@
     }
     .active-link {
         img {
-            filter: invert(31%) sepia(41%) saturate(4253%) hue-rotate(205deg) brightness(98%) contrast(86%);
+            filter: v.$filter;
         }
     }
 }
@@ -57,6 +57,14 @@
 
 
 //mediaqueries
+@media screen and (max-width: 991px) {
+
+    .header {
+        padding: 0 20px;
+    }
+
+}
+
 @media screen and (max-width: 695px){
     .navbar {
         display: none;
@@ -66,12 +74,4 @@
         display: block;
     }
     
-}
-
-@media screen and (max-width: 868px) {
-
-    .header {
-        padding: 0 20px;
-    }
-
 }
