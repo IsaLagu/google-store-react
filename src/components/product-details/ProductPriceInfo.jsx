@@ -9,7 +9,11 @@ const ProductPriceInfo = () => {
       <p className="total">229 €</p>
       <br />
       <div className="buttons">
-        <QntySelect style={{ width: "20%", border: "1px solid", borderRadius: "6px" }} />
+        <QntySelect
+          value={5}
+          onChange={(a) => console.log("EEEE", a)}
+          style={{ width: "20%", border: "1px solid", borderRadius: "6px" }}
+        />
         <Button width="80%">Add to cart</Button>
       </div>
       <div className="delivery">
