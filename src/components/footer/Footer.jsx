@@ -5,24 +5,24 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-icons">
         <a href="https://x.com/madebygoogle" target="_blank" rel="noopener noreferrer">
-        <img src="src\assets\icons\SM-x.svg" alt="x icon" />
+        <img src="src\assets\icons\SM-x.svg" alt="X / Twitter icon" />
         </a>
         <a href="https://www.instagram.com/madebygoogle/" target="_blank" rel="noopener noreferrer">
-        <img src="src\assets\icons\SM-instagram.svg" alt="insta icon" />
+        <img src="src\assets\icons\SM-instagram.svg" alt="Instagram icon" />
         </a>
         <a href="https://www.facebook.com/madebygoogle" target="_blank" rel="noopener noreferrer">
-        <img src="src\assets\icons\SM-facebook.svg" alt="fb icon" />
+        <img src="src\assets\icons\SM-facebook.svg" alt="Facebook icon" />
         </a>
         <a href="https://www.youtube.com/madebygoogle" target="_blank" rel="noopener noreferrer">
-        <img src="src\assets\icons\SM-youtube.svg" alt="yt icon" />
+        <img src="src\assets\icons\SM-youtube.svg" alt="Youtube icon" />
         </a>
         <a href="https://www.tiktok.com/@googlepixel" target="_blank" rel="noopener noreferrer">
-        <img src="src\assets\icons\SM-tiktok.svg" alt="tt icon" />
+        <img src="src\assets\icons\SM-tiktok.svg" alt="TikTok icon" />
         </a>
       </div>
       <span className="footer-texts">
         <div className="spain">
-          <img src="src\assets\icons\Spain.svg" alt="Spain" />
+          <img src="src\assets\icons\Spain.svg" alt="Spain flag" />
           <a href="#spain">Spain</a>
         </div>
         <a href="#privacy">Privacy</a>
