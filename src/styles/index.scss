@@ -2,19 +2,35 @@
 @use "variables" as v;
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
+    margin:0;
     background-color: v.$white;
     font-family: v.$font;
 }
 
-a {
-    color: v.$text-color;
-    text-decoration: none;
-    font-weight: 400;
+h1,h2{
+    font-weight: 700;
+}
 
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p, a{
+    font-size: 12px;
+    color: v.$text-color;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
     &:hover {
         color: v.$primary-color;
     }

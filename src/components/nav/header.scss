@@ -1,21 +1,22 @@
 @use '../../styles/variables.scss' as v;
 
 .header {
+    height: 41px;
+    padding: 0 100px;
     display: grid;
     grid-template-columns: auto 1fr auto;
-    align-items: center;
-    padding: 10px;    
+    align-items: center;    
     box-shadow: v.$box-shadow;
-    margin-bottom: 30px;
     z-index: 1000;
     .logo img {
-        width: 40px; 
+        width: 32px; 
     }
 }
+
 .navbar {
     display: flex;
-    padding-left: 10px;
-    gap:15px;
+    padding-left: 18px;
+    gap:18px;
     div{
         a{
             text-decoration: none;
@@ -33,7 +34,8 @@
 .icons {
     display: flex;
     justify-content: flex-end;
-    gap:20px;
+    padding-top: 4px;
+    gap:26px;
     img {
         width: 20px;
     }    
@@ -55,34 +57,21 @@
 
 
 //mediaqueries
-@media only screen and (min-width: 415px) and (max-width: 768px) {
-    .navbar{
-        gap: 5px;
-    }
-    .icons {
-        gap: 10px;
-    }
-    .menu-icon{
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    .header{
-        width: 100%;
-    }
+@media screen and (max-width: 695px){
     .navbar {
         display: none;
-    }
-    .icons {
-        gap: 20px;
-        .menu-icon{
-            display: block;
-        }
     }
 
     .nav-mobile {
         display: block;
     }
     
+}
+
+@media screen and (max-width: 868px) {
+
+    .header {
+        padding: 0 20px;
+    }
+
 }
