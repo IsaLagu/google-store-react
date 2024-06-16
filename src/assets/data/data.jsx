@@ -26,11 +26,11 @@ export const products = [
     price: 229,
     property: [
       {
-        color: "Bay",
+        color: "bay",
         imgSrc: ["bay_earbuds_01.png", "bay_earbuds_02.png", "bay_earbuds_03.png", "bay_earbuds_04.png"],
       },
       {
-        color: "Porcelain",
+        color: "porcelain",
         imgSrc: [
           "porcelain_earbuds_01.png",
           "porcelain_earbuds_02.png",
@@ -39,7 +39,7 @@ export const products = [
         ],
       },
       {
-        color: "Charcoal",
+        color: "charcoal",
         imgSrc: [
           "charcoal_earbuds_01.png",
           "charcoal_earbuds_02.png",
@@ -48,11 +48,11 @@ export const products = [
         ],
       },
       {
-        color: "Fog",
+        color: "fog",
         imgSrc: ["fog_earbuds_01.png", "fog_earbuds_02.png", "fog_earbuds_03.png", "fog_earbuds_04.png"],
       },
       {
-        color: "Lemongrass",
+        color: "lemongrass",
         imgSrc: [
           "lemongrass_earbuds_01.png",
           "lemongrass_earbuds_02.png",
@@ -61,7 +61,7 @@ export const products = [
         ],
       },
       {
-        color: "Coral",
+        color: "coral",
         imgSrc: ["coral_earbuds_01.png", "coral_earbuds_02.png", "coral_earbuds_03.png", "coral_earbuds_04.png"],
       },
     ],

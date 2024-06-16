@@ -3,14 +3,14 @@ import Button from "../Button";
 import QntySelect from "../../components/cart/QntySelect";
 import Delivery from "../cart/Delivery";
 
-const ProductPriceInfo = () => {
+const ProductPriceInfo = ({ product }) => {
   return (
     <div className="product-price-info">
-      <p className="total">229 €</p>
+      <p className="total">{product.price} €</p>
       <br />
       <div className="buttons">
         <QntySelect
-          value={5}
+          value={1}
           onChange={(a) => console.log("EEEE", a)}
           style={{ width: "20%", border: "1px solid", borderRadius: "6px" }}
         />
