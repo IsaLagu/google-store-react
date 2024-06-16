@@ -2,6 +2,7 @@
 
 .summaryText {
     font-size: 12px;
+    font-size: 12px;
     color: v.$text-color;
 }
 
@@ -59,6 +60,7 @@ width: 20%;
 .removeFromCart {
     font-weight: bold;
     font-size: 12px;
+    font-size: 12px;
     color: v.$primary-color;
 }
 
@@ -70,10 +72,14 @@ width: 20%;
     align-content: end;
     width: 20%;
     text-align: right;
+    width: 20%;
+    text-align: right;
 }
 
 .delivInfo {
     width: 100%;
+    padding: 20px 0;
+    margin-left: 20%;
     padding: 20px 0;
     margin-left: 20%;
 } 

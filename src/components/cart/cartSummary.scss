@@ -2,6 +2,7 @@
 
 .summaryText {
     font-size: 12px;
+    font-size: 12px;
     color: v.$text-color;
 }
 
@@ -15,12 +16,19 @@
 }
 .installment{
     padding-bottom: 10%;
+    font-size: 12px;
+}
+.installment{
+    padding-bottom: 10%;
 }
 
 .calcInstallment {
     font-size: 8px;
     color: v.$text-color;
+    font-size: 8px;
+    color: v.$text-color;
     text-align: right;
+    line-height: 0.5em;
     line-height: 0.5em;
 }
 
