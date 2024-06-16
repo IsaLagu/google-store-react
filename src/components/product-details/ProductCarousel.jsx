@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./ProductCarousel.scss";
 
 const ProductCarousel = ({ productImages, productId }) => {
   const [selectedImage, setSelectedImage] = useState(productImages[0]);
+
+  useEffect(() => {
+    setSelectedImage(productImages[0]); // when color is selected, change image to the color selected
+  }, [productImages]);
 
   return (
     <div className="product-carousel">
