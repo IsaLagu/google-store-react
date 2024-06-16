@@ -11,7 +11,18 @@ $orange: rgba(227, 132, 114, 1);
   display: flex;
   gap: 5px;
 }
-  
+.set-img{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.div-img{
+  width: 30%;
+  padding: 10px;
+}
+.img-color{
+  width: 80px;
+}
 .circle {
   height: 30px;
   width: 30px;
