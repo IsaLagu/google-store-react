@@ -1,0 +1,77 @@
+@use '../../styles/variables.scss' as v;
+
+.header {
+    height: 41px;
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;    
+    box-shadow: v.$box-shadow;
+    z-index: 1000;
+    .logo img {
+        width: 32px; 
+    }
+}
+
+.navbar {
+    display: flex;
+    padding-left: 18px;
+    gap:18px;
+    div{
+        a{
+            text-decoration: none;
+            color: v.$text-color;
+        }
+        p{
+            color: v.$text-color;
+        }
+    }
+    .active-link{
+        color: v.$primary-color;
+    }
+} 
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 4px;
+    gap:26px;
+    img {
+        width: 20px;
+    }    
+    .menu-icon{
+        display: none;
+        color: v.$primary-color;
+    }
+    .active-link {
+        img {
+            filter: v.$filter;
+        }
+    }
+}
+
+.nav-mobile {
+    display: none;
+    cursor: pointer;
+}
+
+
+//mediaqueries
+@media screen and (max-width: 991px) {
+
+    .header {
+        padding: 0 20px;
+    }
+
+}
+
+@media screen and (max-width: 695px){
+    .navbar {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+    
+}

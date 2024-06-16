@@ -1,0 +1,10 @@
+@import "../styles/variables.scss";
+
+.button {
+  text-align: center;  
+  background-color: $primary-color;
+  border: none;
+  border-radius: 6px;
+  height: 50px;
+  color: $white;
+}

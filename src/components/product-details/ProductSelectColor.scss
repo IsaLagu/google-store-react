@@ -1,0 +1,66 @@
+@import "../../styles/variables.scss";
+
+$blue: rgba(159, 198, 232, 1);
+$beige: rgba(232, 227, 222, 1);
+$darkgray: rgba(76, 76, 78, 1);
+$lightgray: rgba(210, 215, 218, 1);
+$lime: rgba(223, 229, 183, 1);
+$orange: rgba(227, 132, 114, 1);
+
+.product-select-color {
+  margin-bottom: 110px;
+}
+.product-select-color-watches {
+  height: 170px;
+}
+.set-color {
+  display: flex;
+  gap: 5px;
+}
+.set-img{
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+.div-img{
+  width: 32%;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+.img-color{
+  width: 70px;
+}
+.circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border-style:solid;
+  border-width: 1px;
+  border-color: $text-color;
+}
+  
+.circle-bay {
+  background-color: $blue;
+}
+
+.circle-porcelain {
+  background-color: $beige;
+}
+
+.circle-charcoal {
+  background-color: $darkgray;
+}
+  
+.circle-fog {
+  background-color: $lightgray;
+}
+
+.circle-lemongrass {
+  background-color: $lime;
+}
+
+.circle-coral {
+  background-color: $orange;
+}
+  
