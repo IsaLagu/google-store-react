@@ -3,17 +3,22 @@ import ProductCarousel from "../components/product-details/ProductCarousel";
 import ProductInfo from "../components/product-details/ProductInfo";
 import ProductPriceInfo from "../components/product-details/ProductPriceInfo";
 import ProductSelectColor from "../components/product-details/ProductSelectColor";
-import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { products } from "../assets/data/data";
 import GoBack from "../components/buttons/GoBack";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const ProductDetails = () => {
   const { id = "earbuds" } = useParams();
-
   const product = products.find((product) => product.id === id);
   const [color, setColor] = useState("bay");
+  const saveColor = (color) => {
+    localStorage.setItem("selectedColor", JSON.stringify(color));
+  };
+
+  useEffect(() => {
+    saveColor("bay");
+  }, []);
 
   return (
     <article className="product">
