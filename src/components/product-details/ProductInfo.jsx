@@ -2,10 +2,10 @@ import "./ProductInfo.scss";
 
 const ProductInfo = ({ name, description, price }) => {
   return (
-    <div class="info-device">
+    <div className="info-device">
       <h1>{name}</h1>
-      <p class="info-text">{description}</p>
-      <p class="info-price">{price} €</p>
+      <p className="info-text">{description}</p>
+      <p className="info-price">{price} €</p>
     </div>
   );
 };

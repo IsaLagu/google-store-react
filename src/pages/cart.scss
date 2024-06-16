@@ -37,11 +37,12 @@
             .itemsInCart:last-child{
                 border-bottom: none;
             }
-            .cartSummary {
-                width: 30%;
-            }
         } 
     }
+}
+
+ .cartSummary {
+    width: 30%;
 }
 h3 {
     padding-top: 0;
