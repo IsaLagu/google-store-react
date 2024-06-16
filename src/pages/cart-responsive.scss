@@ -1,0 +1,29 @@
+@media only screen and (max-width:744px) and (min-width:451px) {
+    .shoppingCart{
+        padding: 30px 50px;
+        .cartColumns {
+            .allItemsInCart{
+                width: 100%;
+                margin-bottom: 30px;
+                .cartProdContainer{
+                    padding: 30px 0;
+                }
+            }
+        }
+    }
+    .cartSummary {
+        width: 100%;
+        .summaryColRight{
+            padding: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .shoppingCart{
+        padding: 30px 10px;
+    }
+    .summaryColRight{
+        padding: 20px 10px;
+    }
+}

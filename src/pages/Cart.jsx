@@ -1,4 +1,5 @@
 import './cart.scss';
+import './cart-responsive.scss';
 import CartSummary from "../components/cart/CartSummary";
 import CartProdContainer from "../components/cart/CartProdContainer";
 
