@@ -7,6 +7,12 @@ $lightgray: rgba(210, 215, 218, 1);
 $lime: rgba(223, 229, 183, 1);
 $orange: rgba(227, 132, 114, 1);
 
+.product-select-color {
+  margin-bottom: 110px;
+}
+.product-select-color-watches {
+  height: 170px;
+}
 .set-color {
   display: flex;
   gap: 5px;
@@ -14,14 +20,16 @@ $orange: rgba(227, 132, 114, 1);
 .set-img{
   width: 100%;
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 .div-img{
-  width: 30%;
-  padding: 10px;
+  width: 32%;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
 }
 .img-color{
-  width: 80px;
+  width: 70px;
 }
 .circle {
   height: 30px;
