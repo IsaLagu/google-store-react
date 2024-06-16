@@ -2,7 +2,7 @@ import "./ProductSelectColor.scss";
 const ProductSelectColorWatches = ({ productId, product, onChange }) => {
 
   return (
-    <div className="product-select-color">
+    <div className="product-select-color-watches">
       <p>Choose a Color</p>
       <div className="set-img">
         {product.property.map((ele) => (
