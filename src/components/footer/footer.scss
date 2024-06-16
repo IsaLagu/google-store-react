@@ -44,7 +44,6 @@
 @media screen and (max-width: 991px) {
     .footer {
         padding: 0 20px;
-        position: relative;
     }
 }
 
@@ -61,6 +60,7 @@
         flex-direction: column;
         height: 100%;
         gap: 13px;
+        position: relative;
 
         .footer-icons {
             justify-content: center;
