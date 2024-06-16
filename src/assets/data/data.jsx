@@ -7,15 +7,15 @@ export const products = [
     property: [
       {
         color: "Midnight Zen",
-        imgSrc: "smartwatch_black.png",
+        imgSrc: ["Midnight Zen_watches_01.png"],
       },
       {
         color: "Lilac Bliss",
-        imgSrc: "smartwatch_pink.png",
+        imgSrc: ["Lilac Bliss_watches_01.png"],
       },
       {
         color: "Morning Glow",
-        imgSrc: "smartwatch_yellow.png",
+        imgSrc: ["Morning Glow_watches_01.png"],
       },
     ],
   },
