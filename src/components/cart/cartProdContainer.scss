@@ -62,3 +62,9 @@
     width: 100%;
     padding: 20px;
 } 
+
+@media only screen and (max-width: 576px){
+    .qntySelect {
+        height: 40px;
+    } 
+}
