@@ -1,7 +1,11 @@
 @use '../../styles/variables' as v;
 
+.ff {
+    font-family: v.$font;
+}
+
 .summaryText {
-    font-size: 12px;
+    font-size: 0.7em;
     color: v.$text-color;
 }
 
@@ -11,39 +15,18 @@
 
 .finalTotal {
     color: v.$secondary-color;
-    font-size: 12px;
-}
-.installment{
-    padding-bottom: 10%;
+    font-size: 0.7em;
 }
 
 .calcInstallment {
-    font-size: 8px;
-    color: v.$text-color;
+    font-size: 0.5em;
     text-align: right;
-    line-height: 0.5em;
+ 
 }
 
 .summaryColRight {
+ border: 1px solid black;   
  background-color: v.$background-color;
  border-radius: 5px;
- padding: 30px 20px;
-}
-
-.totalsSpacing {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2%;
-    margin: none;
-}
-
-.purchaseButton {
-    width: 100%;
-    font-weight: bold;
-}
-
-.lastItem {
-    border-bottom: 1px solid v.$text-color;
-    
+ width: 100%;
 }

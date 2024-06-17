@@ -23,7 +23,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
   }
     
   .img-icono {
@@ -50,20 +49,11 @@
 
 @media only screen and (max-width: 991px) {
 
-  .product-carousel .img-prev img {
-    width: 350px; 
+  .product-carousel {
     display: block;
 
     .imgs-device {
     display: none;  
     }
-    
   }
-}
-@media only screen and (max-width: 576px){
-  .product-carousel .img-prev img {
-    width: 250px;
-    height: auto;
-    object-fit: cover;
-}
 }
