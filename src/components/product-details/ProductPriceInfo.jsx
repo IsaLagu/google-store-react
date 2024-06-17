@@ -39,7 +39,7 @@ const ProductPriceInfo = ( product ) => {
   }
   return (
     <div className="product-price-info">
-      <p className="total">{product.price} €</p>
+      <p className="total">{product.product.price} €</p>
       <br />
       <div className="buttons">
         <QntySelect
