@@ -9,15 +9,17 @@ import { products } from "./assets/data/data.jsx";
 
 export default function App() {
   return (
-    <div className="App">
+    <div className="app">
       <BrowserRouter>
         <Header />
-        <Routes>
-          <Route path="/" element={<ProductDetails product={products[1]} />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/:id" element={<ProductDetails product={products[1]}/>} />
-          <Route path="/watches" element={<ProductDetailsSmart product={products[0]}/>} />
-        </Routes>
+        <main className="content">
+          <Routes>
+            <Route path="/" element={<ProductDetails product={products[1]} />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/:id" element={<ProductDetails product={products[1]}/>} />
+            <Route path="/watches" element={<ProductDetailsSmart product={products[0]}/>} />
+          </Routes>
+        </main>
         <Footer />
       </BrowserRouter>
     </div>
