@@ -16,7 +16,15 @@ const CartProdContainer = () => {
         setCartItems(updatedCart);
         localStorage.setItem('cart', JSON.stringify(updatedCart));
     };
-
+    const handleQuantityChange = (quantity, title) => {
+        const updatedItems = cartItems.map(item =>
+            item.title === title ? { ...item, quantity } : item
+        );
+        setCartItems(updatedItems);
+        localStorage.setItem('cart', JSON.stringify(updatedItems));
+        onQuantityChange();
+    };
+    
     return (
         <div className='cartProdContainer'>
             {cartItems.map((item) => (
@@ -29,13 +37,7 @@ const CartProdContainer = () => {
                         <span className="ff summaryText">Cant:
                             <QntySelect 
                                 value={item.quantity} 
-                                onChange={(quantity) => {
-                                    const updatedItems = cartItems.map(cartItem => 
-                                        cartItem.title === item.title ? { ...cartItem, quantity } : cartItem
-                                    );
-                                    setCartItems(updatedItems);
-                                    localStorage.setItem('cart', JSON.stringify(updatedItems));
-                                }} 
+                                onChange={(quantity) => handleQuantityChange(quantity, item.title)} 
                             />
                         </span>
                     </div>
