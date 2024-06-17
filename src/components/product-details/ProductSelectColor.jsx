@@ -28,8 +28,7 @@ const ProductSelectColor = ({ product, onChange }) => {
 
 ProductSelectColor.propTypes = {
   product: PropTypes.object,
-  onChange: PropTypes.func,
-  onClick: PropTypes.func
+  onChange: PropTypes.func
 };
 
 export default ProductSelectColor;
