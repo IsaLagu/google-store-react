@@ -10,7 +10,6 @@ import { useState } from "react";
 
 const ProductDetailsSmart = () => {
   const { id = "watches" } = useParams();
-
   const product = products.find((product) => product.id === id);
   const [color, setColor] = useState("Midnight Zen");
 

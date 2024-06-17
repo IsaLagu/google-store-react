@@ -2,7 +2,6 @@
 
 .summaryText {
     font-size: 12px;
-    font-size: 12px;
     color: v.$text-color;
 }
 
@@ -16,30 +15,19 @@
 }
 .installment{
     padding-bottom: 10%;
-    font-size: 12px;
-}
-.installment{
-    padding-bottom: 10%;
 }
 
 .calcInstallment {
     font-size: 8px;
     color: v.$text-color;
-    font-size: 8px;
-    color: v.$text-color;
     text-align: right;
-    line-height: 0.5em;
     line-height: 0.5em;
 }
 
 .summaryColRight {
  background-color: v.$background-color;
  border-radius: 5px;
-<<<<<<< HEAD
  padding: 30px 20px;
-=======
- padding: 10% 15%;
->>>>>>> d01607e (aligned components in cart)
 }
 
 .totalsSpacing {

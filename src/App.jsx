@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/nav/Header";
 import Footer from "./components/footer/Footer";
@@ -25,6 +24,3 @@ export default function App() {
     </div>
   )
 }
-<<<<<<< HEAD
-
-

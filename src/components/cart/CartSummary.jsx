@@ -1,12 +1,12 @@
+import React from 'react';
 import './cartSummary.scss';
 import Button from '../Button.jsx';
 
-export default function CartSummary() {
+const CartSummary = ({ cartItems }) => {
    
-    //const [total, setTotal] = useState(0);
-    let subtotal = 428.90;
-    let shipping = 4.90;
-    let total = subtotal + shipping;
+    const subtotal = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
+    const shipping = 4.90;
+    const total = subtotal + shipping;
 
     return (
       <div className="summaryColRight">
@@ -42,3 +42,5 @@ export default function CartSummary() {
       </div>
     );
   }
+
+  export default CartSummary;
