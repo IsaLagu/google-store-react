@@ -1,59 +1,55 @@
-import { products } from '../../assets/data/data.jsx';
+import { useState, useEffect } from 'react';
 import './cartProdContainer.scss';
 import Delivery from './Delivery.jsx';
 import QntySelect from './QntySelect.jsx';
 
 const CartProdContainer = () => {
-       
+    const [cartItems, setCartItems] = useState([]);
+
+    useEffect(() => {
+        const storedCart = JSON.parse(localStorage.getItem('cart')) || [];
+        setCartItems(storedCart);
+    }, []);
+
+    const handleRemove = (title) => {
+        const updatedCart = cartItems.filter(item => item.title !== title);
+        setCartItems(updatedCart);
+        localStorage.setItem('cart', JSON.stringify(updatedCart));
+    };
+
     return (
         <div className='cartProdContainer'>
-            <div className="productAdded">
-                <div className='cartImg'>
-                    <img className="imgInCart" src="../src/assets/earbuds/earbuds_01.png" alt="" />
+            {cartItems.map((item) => (
+                <div className="productAdded" key={item.title}>
+                    <div className='cartImg'>
+                        <img className="imgInCart" src={`/${item.img}`} alt={item.title} />
+                    </div>
+                    <div className="cartProdInfo">
+                        <p className="ff productDesc summaryText">{item.title}</p>
+                        <span className="ff summaryText">Cant:
+                            <QntySelect 
+                                value={item.quantity} 
+                                onChange={(quantity) => {
+                                    const updatedItems = cartItems.map(cartItem => 
+                                        cartItem.title === item.title ? { ...cartItem, quantity } : cartItem
+                                    );
+                                    setCartItems(updatedItems);
+                                    localStorage.setItem('cart', JSON.stringify(updatedItems));
+                                }} 
+                            />
+                        </span>
+                    </div>
+                    <div className="cartItemPrice">
+                        <div className="ff summaryText">{item.price} €</div>
+                        <a className="ff removeFromCart" href="#" onClick={() => handleRemove(item.title)}>Remove</a>
+                    </div>
                 </div>
-                <div className="cartProdInfo">
-                    <p className="ff productDesc summaryText">Google Pixel Buds Pro in light blue</p>
-                    <span className="ff summaryText">Cant: 
-                    <QntySelect/>
-                    </span>
-                </div>
-                <div className="cartItemPrice">
-                    <div className="ff summaryText">{229.00} €</div>
-                    <a className="ff removeFromCart" href="">Remove</a>
-                </div>
-            </div>
+            ))}
             <div className="delivInfo">
-                <Delivery/>
+                <Delivery />
             </div>
-        </div> 
-
-/*            <div className="cartProdContainer">
-                {products.map((product) => (
-                    <div className="productAdded" key={product.id}>
-                        <div className='cartImg'>
-                            <img src={product.imgSrc} alt={product.title}/>
-                        </div>
-                        <div className="cartProdInfo">
-                            <p className="ff productDesc summaryText">{product.title} in {product.color}</p>
-                            <span className="ff summaryText">Cant: 
-                            <QntySelect/>
-                            </span>
-                        </div>
-                        <div className="cartItemPrice">
-                            <div className="ff summaryText">{product.price} €</div>
-                            <a className="ff removeFromCart" href="">Remove</a>
-                        </div>
-                    </div>
-                    <div className="delivInfo">
-                        <Delivery/>
-                    </div>
-                ))}
-            </div>  */
-        
-
-        )
-    }
-
-
+        </div>
+    );
+};
 
 export default CartProdContainer;
