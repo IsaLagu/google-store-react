@@ -43,11 +43,12 @@ const CartProdContainer = () => {
                         <div className="ff summaryText">{item.price} €</div>
                         <a className="ff removeFromCart" href="#" onClick={() => handleRemove(item.title)}>Remove</a>
                     </div>
+                    <div className="delivInfo">
+                        <Delivery />
+                    </div>
                 </div>
             ))}
-            <div className="delivInfo">
-                <Delivery />
-            </div>
+
         </div>
     );
 };
