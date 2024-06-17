@@ -31,10 +31,6 @@
                 width: 100%;
                 display: flex;
                 justify-content: center;
-                border-bottom: 1px solid v.$secondary-color;
-            }
-            .itemsInCart:last-child{
-                border-bottom: none;
             }
         } 
     }

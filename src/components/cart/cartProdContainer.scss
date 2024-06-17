@@ -19,6 +19,10 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    border-bottom: 1px solid v.$secondary-color;
+}
+.productAdded:last-child{
+    border-bottom: none;
 }
 .cartImg {
 width: 20%;
