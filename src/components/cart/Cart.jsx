@@ -1,7 +1,6 @@
 import './cart.scss';
-import './cart-responsive.scss';
-import CartSummary from "../components/cart/CartSummary";
-import CartProdContainer from "../components/cart/CartProdContainer";
+import CartSummary from "./CartSummary";
+import CartProdContainer from "./CartProdContainer";
 
 export default function Cart() {
    /*  const [cartItems, setCartItems] = useState([]);
@@ -21,10 +20,7 @@ export default function Cart() {
             </section>
 
             <section className='cartColumns'>
-            <div className="allItemsInCart">
-                <div className="itemsInCart"><CartProdContainer/></div>
-                <div className="itemsInCart"><CartProdContainer/></div>
-            </div>
+            <div className="itemsInCart"><CartProdContainer/></div>
             <aside className="cartSummary"><CartSummary/></aside>
             </section>
         </main>

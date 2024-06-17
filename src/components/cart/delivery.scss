@@ -4,18 +4,22 @@
     display: flex;
     align-items: center;
     justify-content:left;
-    width: 100%;
+    width: 70%;
     font-weight: bold;
     background-color: v.$white;
     border-radius: 5px;
+
 }
+
 .truckIcon {
     padding: 0 10px;
 }
+
 .deliveryText {
     color: v.$text-color;
-    font-size: 12px;
+    font-size: 0.7rem;
 }
+
 .postalCode {
     color: v.$primary-color;
 }
