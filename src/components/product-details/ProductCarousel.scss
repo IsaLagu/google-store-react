@@ -1,8 +1,8 @@
 @import "../../styles/variables.scss";
 
-.product-carousel {
-  display: flex;
-  width: 100%;
+  .product-carousel {
+    display: flex;
+    width: 100%;
 
   .imgs-device {
     width: 160px;
@@ -41,29 +41,39 @@
     align-items: center;
   }
     
-  .img-prev img {
-    width: 350px;
-    height: auto;
-    object-fit: cover;
+  .img-prev {
+    img {
+      width: 350px;
+      height: auto;
+      object-fit: cover;
+    }
   }
 }
 
 @media only screen and (max-width: 991px) {
 
-  .product-carousel .img-prev img {
-    width: 350px; 
-    display: block;
-
-    .imgs-device {
-    display: none;  
+  .product-carousel {
+    .img-prev {
+      img {
+        width: 350px; 
+        display: block;
+      }
     }
-    
+    .imgs-device {
+      display: none;  
+      }
   }
+
+  
 }
 @media only screen and (max-width: 576px){
-  .product-carousel .img-prev img {
-    width: 250px;
-    height: auto;
-    object-fit: cover;
-}
+  .product-carousel {
+    .img-prev {
+      img {
+        width: 250px;
+        height: auto;
+        object-fit: cover;
+    }
+    }
+  }
 }

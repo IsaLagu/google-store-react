@@ -1,11 +1,10 @@
 @use '../styles/variables' as v;
 
 .shoppingCart {
-    background-color: v.$white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 10% 50px 40px;
+    padding: 10px 50px 40px;
     .cartTitle {
         align-content: center;
         text-align: center;
