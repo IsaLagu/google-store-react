@@ -35,6 +35,16 @@ width: 20%;
     margin-bottom: 0;
 }
 
+.qntySelect {
+    background-color: v.$background-color;
+    color: v.$text-color;
+    font-family: v.$font;
+    font-size: 1em;
+    border: none;
+    margin-top: 0;
+    height: 50px;
+}
+
 .removeFromCart {
     font-weight: bold;
     font-size: 12px;
@@ -52,3 +62,9 @@ width: 20%;
     padding: 20px 0;
     margin-left: 20%;
 } 
+
+@media only screen and (max-width: 576px){
+    .qntySelect {
+        height: 40px;
+    } 
+}

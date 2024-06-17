@@ -1,16 +1,25 @@
-import './styles/variables.scss';
-import './styles/app.scss';
-import './components/cart/delivery.scss';
-import './pages/cart.scss';
-import './components/cart/cartProdContainer.scss';
-import Cart from './pages/Cart.jsx';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/nav/Header";
+import Footer from "./components/footer/Footer";
+import "./styles/app.scss";
+import ProductDetails from "./pages/ProductDetails";
+import ProductDetailsSmart from "./pages/ProductDetailsSmart";
+import Cart from "./pages/Cart";
+import { products } from "./assets/data/data.jsx";
 
-function App() {
-    return (
-        <div>
-            <Cart/>
-        </div>
-    );
+export default function App() {
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<ProductDetails product={products[1]} />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/:id" element={<ProductDetails product={products[1]}/>} />
+          <Route path="/watches" element={<ProductDetailsSmart product={products[0]}/>} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </div>
+  )
 }
-
-export default App

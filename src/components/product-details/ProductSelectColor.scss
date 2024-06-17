@@ -7,11 +7,30 @@ $lightgray: rgba(210, 215, 218, 1);
 $lime: rgba(223, 229, 183, 1);
 $orange: rgba(227, 132, 114, 1);
 
+.product-select-color {
+  margin-bottom: 110px;
+}
+.product-select-color-watches {
+  height: 170px;
+}
 .set-color {
   display: flex;
   gap: 5px;
 }
-  
+.set-img{
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+.div-img{
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+.img-color{
+  width: 70px;
+}
 .circle {
   height: 30px;
   width: 30px;
@@ -19,29 +38,58 @@ $orange: rgba(227, 132, 114, 1);
   border-style:solid;
   border-width: 1px;
   border-color: $text-color;
+  cursor: pointer;
 }
   
-.circle-blue {
+.circle-bay {
   background-color: $blue;
 }
 
-.circle-beige {
+.circle-porcelain {
   background-color: $beige;
 }
 
-.circle-darkgray {
+.circle-charcoal {
   background-color: $darkgray;
 }
   
-.circle-lightgray {
+.circle-fog {
   background-color: $lightgray;
 }
 
-.circle-lime {
+.circle-lemongrass {
   background-color: $lime;
 }
 
-.circle-orange {
+.circle-coral {
   background-color: $orange;
 }
+
+@media only screen and (max-width: 991px) {
+  .set-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+   margin-right: 20px;
+   width: 100%;
+  }
   
+
+  .product-select-color-watches {
+    height: auto;
+    width: 40%;
+  }
+
+}
+
+@media only screen and (max-width: 576px){
+  .set-img{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+  .product-select-color-watches {
+    height: 170px;
+    width: 100%;
+  }
+}
