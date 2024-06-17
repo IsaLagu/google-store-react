@@ -1,11 +1,7 @@
 @use '../../styles/variables' as v;
 
-.ff {
-    font-family: v.$font;
-}
-
 .summaryText {
-    font-size: 0.7em;
+    font-size: 12px;
     color: v.$text-color;
 }
 
@@ -14,16 +10,17 @@
 }
 
 .cartProdContainer {
-    background-color: v.$background-color;
     display: flex;
     flex-wrap: wrap;
-    
-    //border: 1px solid blue;
+    padding: 30px 20px;
+    width: 90%;
 }
-
 .productAdded {
-    display: inline-flex;
-    flex-direction: row;
+    display: flex;
+    width: 100%;
+}
+.cartImg {
+width: 20%;
 }
 
 .imgInCart {
@@ -31,8 +28,8 @@
 }
 
 .cartProdInfo {
-    padding-right: 30px;
-    margin-right: 50px;
+    width: 60%;
+    
 }
 .productDesc {
     margin-bottom: 0;
@@ -50,18 +47,20 @@
 
 .removeFromCart {
     font-weight: bold;
-    font-size: 0.7em;
+    font-size: 12px;
     color: v.$primary-color;
 }
 
 .cartItemPrice {
-    justify-content: right;
     align-content: end;
+    width: 20%;
+    text-align: right;
 }
 
 .delivInfo {
     width: 100%;
-    padding: 20px;
+    padding: 20px 0;
+    margin-left: 20%;
 } 
 
 @media only screen and (max-width: 576px){
